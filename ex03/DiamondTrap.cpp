@@ -24,13 +24,13 @@ DiamondTrap::DiamondTrap(DiamondTrap &a)
 	std::cout << "DiamondTrap copy constructor called\n";
 }
 
-DiamondTrap::DiamondTrap(std::string newName): ClapTrap(newName), FragTrap(newName), ScavTrap(newName)
+DiamondTrap::DiamondTrap(std::string newName): ClapTrap(newName), ScavTrap(newName), FragTrap(newName)
 {
 	_name = newName;
 	ClapTrap::_name = newName + "_clap_trap";
-	_hitPoints = 100;
-	_energyPoints = 50;
-	_attackDamage = 30;
+	_hitPoints = FragTrap::_hitPoints;
+	_energyPoints = ScavTrap::_energyPoints;
+	_attackDamage = FragTrap::_attackDamage;
 	std::cout << "DiamondTrap name constructor called\n";
 }
 
