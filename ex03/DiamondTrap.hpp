@@ -12,6 +12,7 @@ private:
 	std::string	_name;
 
 public:
+
 /*---CONS/DES---*/
 
 	DiamondTrap();

@@ -14,6 +14,16 @@ DiamondTrap::~DiamondTrap()
 	std::cout << "DiamondTrap default destructor called\n";
 }
 
+DiamondTrap::DiamondTrap(DiamondTrap &a)
+{
+	_name = a._name;
+	ClapTrap::_name = a.ClapTrap::_name;
+	_hitPoints = a._hitPoints;
+	_energyPoints = a._energyPoints;
+	_attackDamage = a._attackDamage;
+	std::cout << "DiamondTrap copy constructor called\n";
+}
+
 DiamondTrap::DiamondTrap(std::string newName): ClapTrap(newName), FragTrap(newName), ScavTrap(newName)
 {
 	_name = newName;
@@ -21,7 +31,7 @@ DiamondTrap::DiamondTrap(std::string newName): ClapTrap(newName), FragTrap(newNa
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 30;
-	std::cout << "DiamondTrap copy constructor called\n";
+	std::cout << "DiamondTrap name constructor called\n";
 }
 
 /*---MEMBER FUNCTIONS---*/
