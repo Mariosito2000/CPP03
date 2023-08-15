@@ -11,7 +11,7 @@ public:
 /*---CONS/DES---*/
 
 	FragTrap();
-	~FragTrap();
+	virtual ~FragTrap();
 
 	FragTrap(FragTrap &);
 	FragTrap(std::string);

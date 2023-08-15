@@ -11,7 +11,7 @@ public:
 /*---CONS/DES---*/
 
 	ScavTrap();
-	~ScavTrap();
+	virtual	~ScavTrap();
 
 	ScavTrap(ScavTrap &);
 	ScavTrap(std::string);

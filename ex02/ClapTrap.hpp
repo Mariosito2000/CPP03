@@ -19,7 +19,7 @@ public:
 /*---CONS/DES---*/
 
 	ClapTrap();
-	~ClapTrap();
+	virtual ~ClapTrap();
 
 	ClapTrap(ClapTrap &);
 	ClapTrap(std::string);
