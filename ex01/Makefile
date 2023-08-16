@@ -18,7 +18,7 @@ DEPS	=	$(OBJS:.o=.d)
 
 NAME	=	ScavTrap_test
 
-CC		=	g++
+CC		=	c++
 
 #DEBUG	=	-g3
 

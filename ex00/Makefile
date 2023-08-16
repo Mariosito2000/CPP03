@@ -17,7 +17,7 @@ DEPS	=	$(OBJS:.o=.d)
 
 NAME	=	ClapTrap_test
 
-CC		=	g++
+CC		=	c++
 
 #DEBUG	=	-g3
 

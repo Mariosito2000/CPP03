@@ -19,7 +19,7 @@ DEPS	=	$(OBJS:.o=.d)
 
 NAME	=	FragTrap_test
 
-CC		=	g++
+CC		=	c++
 
 #DEBUG	=	-g3
 
