@@ -3,9 +3,9 @@
 DiamondTrap::DiamondTrap()
 {
 	_name = "Diamondy";
-	_hitPoints = 100;
-	_energyPoints = 50;
-	_attackDamage = 30;
+	_hitPoints = FragTrap::_hitPoints;
+	_energyPoints = ScavTrap::_energyPoints;
+	_attackDamage = FragTrap::_attackDamage;
 	std::cout << "DiamondTrap default constructor called\n";
 }
 

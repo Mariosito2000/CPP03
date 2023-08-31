@@ -55,4 +55,5 @@ int	main()
 	Manolo.beRepaired(1);	//13
 	Manolo.takeDamage(1);
 	Manolo.beRepaired(1);	//14
+	return (0);
 }
